@@ -1,0 +1,44 @@
+TERM PROJECT PROPOSAL
+EE102-01
+NEHİR DEMİRLİ
+22.10.2023
+REFLEX TESTER
+
+A.	 INTRODUCTION:
+The primary goal of this task is to build a project using BASYS3 FPGA and analog components. This experiment seeks to assess how quickly you can respond after receiving a visual stimulus, or rather your hand-eye coordination. The user must click the "start" button to activate a random number generator that turns on the "output led" at random intervals (randomness is key here, since the time of led on can be learned). There ought to be a "reset" button to clear all the states and prepare the device for the following reflex test, and the 7-segment display should show a "hi" message to signal that it is ready for the next input. The timer commences and counts the time until the user pushes the "stop" button, at which point the reaction time should be shown on the 7-segment display and the “hi” word should be erased. At the end of the project, messages will be displayed on the  VGA screen according to the reflex seconds. “Well Done” is between 1 and 3 seconds, 3 to 6 seconds is “Not Bad”, and 6-infinity is “Bad Reflexes”.
+
+
+B.	METHODOLOGY:
+The project's goal is to evaluate the reflexes of a human user while reacting to a randomly timed signal, and the Testbench would have completely defeated that goal. The only item that could be tested using a testbench file at the unit level was the D-Flip-Flop, which is too simple to accomplish and absolutely trivial. My main test and demonstration technique is to continually examine each component with all the necessary and relevant test cases, independently for each step, while breaking down the overall problem into smaller modules or functions. 
+
+
+C.	DESIGN SPESIFICATIONS:
+My objective is to basically test the user's responses by calculating the time it takes them to react to external stimuli and then displaying the time. By pushing a button, the user determines whether he or she is ready for the next round. The stimuli in this case are an LED light that turns on, to which the user's response is the pushing of a certain button. The "Hi" fades, and the LED light (the stimulus) flashes after a random (pseudo) time period, to which the user is supposed to respond. When the light is switched on, a clock starts and terminates when the user responds. The time it takes for the user's reaction is then displayed on the Seven Segment Display of the board, and the operation is repeated when the user clicks the button, which prepares the board for the next test. The essence of the Reflex Tester is to generate a random series of numbers that may be used as time intervals between the output LED coming on.
+Sound prototype (complete with all the necessary features as outlined in the issue description), I will create the bitstream file and launch the application on the target system.
+
+D.	UTILIZED THEORY:
+
+I employ a pseudo-random sequence of bits produced by the Linear Feedback Shift Register. It is 'random' in the sense that the value of one of the sequence's elements is independent of the values of the other elements. It is called a 'pseudo' random sequence because, unlike actual random sequences, it begins to replicate itself after N elements. N is equal to n*(2n-1). And the n is selected 4. I am planning to choose   lighting up the output_LED every 4-7s because the average human reaction time to a reaction stimulus is ¼ s.
+
+E.	REQUIRED COMPONENTS:
+•	BASYS3 FPGA
+•	VGA SCREEN
+
+F.	DEMO GOAL:
+I implemented a three-state state diagram. The system enters the first state when the start or reset buttons are pressed. The system then enters the second stage, where a pseudo-random bit sequence is employed to produce random time intervals between the flashing output LEDs. The time interval between the LED lighting and the button push response is used to increase a counter. The third state is attained when the end button is pressed, and the average reaction time is displayed on the SSD. 
+
+G.	FINAL GOAL:
+The second stage uses 16 D-flip-flops and "for generate" statements to construct a Linear Shift Resistor for the final demonstration and to conclude my effort and code. To construct a pseudo-random sequence with a maximum value of N, I will utilize the XOR operation on four bits, especially bits 1, 2, 3, and 15. Messages will be shown on the screen at the end of the project based on the reflex seconds. Lastly, I aim to be successful to generate this project. In addition to that, my final goal is to write VHDL codes correctly and add them to my report.
+
+H.	ADDED PROPERTY:
+A VGA screen with messages shown such as “Well Done” , “Not Bad” and “Bad Reflexes according to reflex time.
+
+
+
+
+ 
+(Figure 1: Block Diagram) 
+
+İ.	BIBLIOGRAPHY:
+•	https://en.wikipedia.org/wiki/Linear-feedback_shift_register
+•	https://arcca.com/blog/human-reaction-time-in-emergency-situations/
