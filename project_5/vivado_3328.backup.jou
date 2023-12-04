@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Nov 27 15:35:10 2023
+# Process ID: 3328
+# Current directory: C:/Users/PC/OneDrive/Masast/EE102/project_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12300 C:\Users\PC\OneDrive\Masast\EE102\project_5\project_5.xpr
+# Log file: C:/Users/PC/OneDrive/Masast/EE102/project_5/vivado.log
+# Journal file: C:/Users/PC/OneDrive/Masast/EE102/project_5\vivado.jou
+# Running On: DESKTOP-B8J43B3, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 8320 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.srcs/sources_1/new/VGA_Screen.vhd w ]
+add_files C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.srcs/sources_1/new/VGA_Screen.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.srcs/sources_1/new/VGA_Driver.vhd w ]
+add_files C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.srcs/sources_1/new/VGA_Driver.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

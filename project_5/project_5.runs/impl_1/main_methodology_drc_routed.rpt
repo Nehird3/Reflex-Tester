@@ -1,0 +1,357 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov 27 15:59:52 2023
+| Host         : DESKTOP-B8J43B3 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
+| Design       : main
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 61
++-----------+------------------+--------------------------------+------------+
+| Rule      | Severity         | Description                    | Violations |
++-----------+------------------+--------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 12         |
+| LUTAR-1   | Warning          | LUT drives async reset alert   | 27         |
+| TIMING-18 | Warning          | Missing input or output delay  | 9          |
+| TIMING-20 | Warning          | Non-clocked latch              | 12         |
+| LATCH-1   | Advisory         | Existing latches in the design | 1          |
++-----------+------------------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUTTON0/inp_arr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin mux/sel_cnt/value_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin mux/sel_cnt/value_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell cnt4/val_cnt3/value[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt4/val_cnt1/overflow_reg/CLR, cnt4/val_cnt1/value_reg[0]/CLR,
+cnt4/val_cnt1/value_reg[1]/CLR, cnt4/val_cnt1/value_reg[2]/CLR,
+cnt4/val_cnt1/value_reg[3]/CLR, cnt4/val_cnt2/overflow_reg/CLR,
+cnt4/val_cnt2/value_reg[0]/CLR, cnt4/val_cnt2/value_reg[1]/CLR,
+cnt4/val_cnt2/value_reg[2]/CLR, cnt4/val_cnt2/value_reg[3]/CLR,
+cnt4/val_cnt3/overflow_reg/CLR, cnt4/val_cnt3/value_reg[0]/CLR,
+cnt4/val_cnt3/value_reg[1]/CLR, cnt4/val_cnt3/value_reg[2]/CLR,
+cnt4/val_cnt3/value_reg[3]/CLR (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay/overflow_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/overflow_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[0]_C/CLR, cnt_delay/value_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[10]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[10]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[10]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[10]_C/CLR, cnt_delay/value_reg[10]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[11]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[11]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[11]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[11]_C/CLR, cnt_delay/value_reg[11]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[1]_C/CLR, cnt_delay/value_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[2]_C/CLR, cnt_delay/value_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[3]_C/CLR, cnt_delay/value_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[4]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[4]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[4]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[4]_C/CLR, cnt_delay/value_reg[4]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[5]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[5]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[5]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[5]_C/CLR, cnt_delay/value_reg[5]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[6]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[6]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#20 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[6]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[6]_C/CLR, cnt_delay/value_reg[6]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#21 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[7]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[7]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#22 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[7]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[7]_C/CLR, cnt_delay/value_reg[7]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#23 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[8]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[8]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#24 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[8]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[8]_C/CLR, cnt_delay/value_reg[8]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#25 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[9]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[9]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#26 Warning
+LUT drives async reset alert  
+LUT cell cnt_delay_rand/value_reg[9]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_delay/value_reg[9]_C/CLR, cnt_delay/value_reg[9]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#27 Warning
+LUT drives async reset alert  
+LUT cell cnt_scoretimer/value[11]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cnt_scoretimer/overflow_reg/CLR, cnt_scoretimer/value_reg[0]/CLR,
+cnt_scoretimer/value_reg[10]/CLR, cnt_scoretimer/value_reg[11]/CLR,
+cnt_scoretimer/value_reg[1]/CLR, cnt_scoretimer/value_reg[2]/CLR,
+cnt_scoretimer/value_reg[3]/CLR, cnt_scoretimer/value_reg[4]/CLR,
+cnt_scoretimer/value_reg[5]/CLR, cnt_scoretimer/value_reg[6]/CLR,
+cnt_scoretimer/value_reg[7]/CLR, cnt_scoretimer/value_reg[8]/CLR
+cnt_scoretimer/value_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on Ca[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on Ca[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on Ca[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on Ca[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on Ca[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on Ca[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on Ca[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on Ca[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on LD0 relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[0]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[0]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[10]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[10]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[11]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[11]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[1]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[1]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[2]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[2]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[3]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[3]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[4]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[4]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[5]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[5]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[6]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[6]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[7]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[7]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[8]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch cnt_delay/value_reg[9]_LDC cannot be properly analyzed as its control pin cnt_delay/value_reg[9]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 12 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

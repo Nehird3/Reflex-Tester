@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Nov 27 16:00:51 2023
+# Process ID: 16600
+# Current directory: C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.runs/impl_1
+# Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.runs/impl_1/main.vdi
+# Journal file: C:/Users/PC/OneDrive/Masast/EE102/project_5/project_5.runs/impl_1\vivado.jou
+# Running On: DESKTOP-B8J43B3, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 8320 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
